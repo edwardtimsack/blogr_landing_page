@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    font-family: 'Overpass';
+}
+
+.intro{
+    /* display: flex; */
+    flex-basis: 10rem;
+    height: 600px;
+    background-color: hsl(13, 100%, 72%); 
+    border-radius: 0px 0px 0px 100px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Adjust the container width as needed */
+    margin: auto; /* Center the container on the page */
+    padding: 40px 20px 70px 20px;
+}
+.header img{
+    max-width: 45%; /* Adjust to ensure images fit well */
+    height: auto;
+}
+.header #menu{
+    cursor: pointer;
+}
+#menu:hover{
+    color: hsl(240, 2%, 79%);
+}
+.intro-text{
+    padding: 20px;
+}
+.intro h1{
+    font-family: 'Overpass';
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 15px;
+}
+.intro p{
+    font-family: 'Overpass';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;  
+    color: hsl(240, 2%, 79%);
+}
+.intro-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: 'Ubuntu';
+}
+.intro-buttons button{
+    /* width: 120px; */
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+
+}
+.intro-buttons #start{
+    color: hsl(356, 100%, 66%);
+    font-weight: 700;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+.intro-buttons #learn{
+    border: 1px solid hsl(240, 2%, 79%);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(13, 100%, 72%);   
+    font-weight: 700;
+
+}
+.section{
+    padding: 10px;
+    margin-top: 30px;
+}
+.designed_the_future{
+    margin-top: 50px;
+}
+.heading {
+    text-align: center;
+    font-size: 20px;
+    color: hsl(208, 49%, 24%);
+}
+.design-card{
+    margin-top: 30px;
+}
+.card_image, .free_image{
+    max-width: 100%;
+}
+.introducing_extensible_editor{
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+}
+.introducing_extensible_editor p{
+    text-align: center;
+    margin-top: 7px;
+    color: hsl(237, 23%, 32%);
+}
+.robusting_content_management{
+    padding: 30px;
+    font-size: 16px;
+    text-align: center;
+    align-content: center;
+}
+.robusting_content_management p{
+    margin-top: 13px;
+    text-align: center;
+    color: hsl(237, 23%, 32%);
+}
+.state_art_infrastructure h1{
+    text-align: center;
+    font-size: 20px;
+}
+.state_image{
+    max-width: 100%;
+    border-radius: 0px 100px 0px 0px;
+    background-color: #ff0000;
+    background-color:hsl(237, 17%, 21%);
+    /* position: absolute; */
+}
+.blogr_image{
+    /* position: static; */
+    max-width: 100%;
+    /* position: absolute; */
+}
+.state_texts{
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    /* position: absolute; */
+}
+.state_texts p{
+    margin-top: 15px;
+}
+.free_open_simple{
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+}
+.free_open_simple h1{
+    margin-top: 15px;
+}
+.free_open_simple p{
+    margin-top: 10px;
+    color: hsl(237, 23%, 32%);
+}
+.powerful_tooling{
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+}
+.powerful_tooling p{
+    margin-top: 10px;
+    color: hsl(237, 23%, 32%);
+}
+footer{
+    border-radius: 0px 100px 0px 0px;
+    background-color:hsl(240, 10%, 16%);
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer h3{
+    color: hsl(240, 2%, 79%);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    padding: 5px;
+}
+footer h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    padding: 1rem;
+}
+footer h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-top: 30px;
+    font-family: 'san-serif';
+    font-family: 'Ubuntu';
+}
+/* Display on mobile views  */
+.mobile_display{
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.mobile_display a{
+    text-decoration: none;
+    color: black;
+}
+.mobile_display hr{
+    height: 1px solid blue;
+}
+.mobile_display button{
+    /* justify-content: center;
+    align-content: center; */
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid hsl(240, 2%, 79%);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(13, 100%, 72%);   
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
